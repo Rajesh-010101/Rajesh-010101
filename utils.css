@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&display=swap');
+.flex-all-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    /* padding: 0 2px; */
+    font-size: 6px;
+    height: 13.83px;
+    width: 30px;
+    /* background-color: black; */
+    /* color: white; */
+    border-radius: 0 5px 5px 0;
+    border: 1px solid silver;
+    cursor: pointer;
+    font-family: 'Lato', sans-serif;
+    /* no use as the hover dont work on this font as its already bold */
+    font-weight: bolder;
+
+}
