@@ -5,11 +5,11 @@
 }
 
 .btn {
-    width: 65px;
-    height: 34px;
-    padding: 2px 2px;
-    margin:0 0 0 10px;
-    font-size: 15px;
+    width: 6vw;
+    height: 5vh;
+    /* padding: 1vw; */
+    margin:0 1vw 0 1vw;
+    font-size: 1vw;
     color: white;
     background-color:var(--main-bg-color);
     border-radius:10px;
@@ -19,7 +19,7 @@
 
 }
 .my-1{
-    margin: 20px 10px ;
+    margin: 20px 80px ;
 }
 .text-center{
     text-align: center;
