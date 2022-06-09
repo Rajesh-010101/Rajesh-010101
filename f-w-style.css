@@ -1,76 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Lobster&display=swap');
+
 /* CSS Reset */
-*{
+* {
     margin: 0;
     padding: 0;
 }
+
 /* CSS Variables */
-:root{
+:root {
     --navbar-height: 59px;
 }
+
 /* Navigation Bar */
-#navbar{
+
+
+#navbar {
     display: flex;
     align-items: center;
     position: relative;
-    
+    margin: auto;
+
 }
-#navbar::before{
+
+#navbar::before {
     content: " ";
     background-color: black;
     position: absolute;
     height: 100%;
     width: 100%;
     z-index: -1;
-    opacity: 1.5;
+    opacity: 0.8;
 }
+
 /*  Navigation Bar Logo and Image  */
-#logo{
+#logo {
     /* margin: 34px 45px; */
 }
 
-#logo img{
+#logo img {
     height: 80px;
     margin: 10px 10px;
     border-radius: 40px;
 }
+
 /* Navigation Bar List Styling */
-#navbar ul{
+#navbar ul {
     display: flex;
+    font-family: 'Lobster', cursive;
 }
 
 #navbar ul li {
-    
+
     list-style: none;
     font-size: 1.3rem;
 }
-#navbar ul li a{
+
+#navbar ul li a {
     color: white;
     display: block;
-   padding: 10px 20px;
-   border-radius: 20px;
-   text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
 }
-#navbar ul li a:hover{
+
+#navbar ul li a:hover {
     color: black;
     background-color: white;
 }
 
 /* Home section */
-#home{
+#home {
     display: flex;
     flex-direction: column;
     padding: 3px 200px;
+    height: 300px;
     justify-content: center;
     align-items: center;
 }
-#home::before{
-    content:" ";
-    position:absolute;
-    background: url('bc-images/bc-image-5.jpg') no-repeat center center/cover;
+
+#home::before {
+    content: " ";
+    position: absolute;
+    background: url('bc-images/background-image.jpg') no-repeat top center/cover;
     /* after bracket is for the image position correction */
     height: 100%;
     width: 100%;
     z-index: -1;
     opacity: 0.9;
     /* background-size: cover; */
+}
+
+#home h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+#home p {
+    color: white;
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+}
+
+/* Service Section  */
+
+#services {
+    margin: 30px;
+    display: flex;
+
+
+}
+
+#services .box {
+    border: 2px solid #773737;
+}
+
+#services .box img {
+    height: 100px;
+}
+
+
+
+/* Utility Classes */
+.h-primary {
+    font-size: 2.5rem;
+    padding: 12px;
+}
+
+.h-primary {
+    font-size: 1.5rem;
+    padding: 12px;
+}
+
+.btn {
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: #773737;
+    color: white;
+    margin: 17px;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.center {
+    text-align: center;
 }
